@@ -10,8 +10,8 @@
 
 
 ### 치매 예측 모델(분류)
-  - Kaggle[Dementia Prediction Dataset](https://www.kaggle.com/datasets/shashwatwork/dementia-prediction-dataset)  
-  - AI Hub[치매 고위험군 웨어러블 라이프로그](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=116&topMenu=100&aihubDataSe=ty&dataSetSn=226)
+  - Kaggle : [Dementia Prediction Dataset](https://www.kaggle.com/datasets/shashwatwork/dementia-prediction-dataset)  
+  - AI Hub : [치매 고위험군 웨어러블 라이프로그](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=116&topMenu=100&aihubDataSe=ty&dataSetSn=226)
 
 
 ### 병원 추천 시스템
@@ -20,7 +20,7 @@
   - 원인: 전문의 또는 병상 부족, 비교적 증상이 가벼운 환자들이 응급 병상에 많은 것
 
 ### 심장병 환자 데이터를 기반으로 한 심장병 예측(분류 모델)
-  - Kaggle[Heart Disease dataset](https://www.kaggle.com/datasets/yeasiny71/heart-disease)
+  - Kaggle : [Heart Disease dataset](https://www.kaggle.com/datasets/yeasiny71/heart-disease)
   - 데이터 크기: 320K
   - 성별, 나이, 인종, BMI, 흡연/음주/뇌졸중/보행장애 여부, 수면 시간, physical health(1~30), mental health(1~30), physical activity(Y/N), general health(good/very good/excellent/fair/poor), 천식/신장질환/피부암/당뇨 여부,심장병 여부(Y/N)
   - [cardiovascular risk factor dataset](https://www.kaggle.com/datasets/mamta1999/cardiovascular-risk-data)

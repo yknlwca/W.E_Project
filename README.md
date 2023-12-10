@@ -26,7 +26,12 @@
   - [cardiovascular risk factor dataset](https://www.kaggle.com/datasets/mamta1999/cardiovascular-risk-data)
   - 데이터 크기: 3,390개
   - 성별, 나이, 교육수준, 흡연 여부 및 흡연량, 혈압약 복용 여부,뇌졸중/고혈압/당뇨병이 있었는지, 총콜레스테롤, 혈압, BMI, 심박수, 혈당, 10년동안 관상동맥질환위험(1,0)
+    
 
 ### GAN, VAE, diffusion 모델 사용해 이미지 복원 관련 아이디어
   - 인풋 음성, 아웃풋 사진 복원
   - text → 이미지 생성
+
+### 석유 - 주유소 시계열 데이터
+  - 주식과 비슷한 느낌
+  - 사회에 어떤 영향을 주는지 / 가격 변동

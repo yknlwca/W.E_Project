@@ -17,4 +17,5 @@
 ### 기술 스택
 ![image](https://github.com/yknlwca/SeSac_Fianl_Prj/assets/145303968/0cd5184d-73dc-4b1b-8adb-c5792c7eabc7)
 
-
+- YOLO : Object Detection, KeyPoint
+- MediaPipe : KeyPoint 3D

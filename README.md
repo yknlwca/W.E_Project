@@ -12,29 +12,29 @@
 ## :pencil: 순서
 -    ![image](https://github.com/yknlwca/SeSac_Fianl_Prj/assets/145303968/afa2d4b8-4389-4cde-bc9d-995a4f33d2a0)
 
- #### 1. 객체 탐지 및 추적
-  - YOLO와 같은 실시간 객체 탐지 시스템을 사용해 매장 내 사람들을 탐지하고 추적
-  - 사람의 움직임을 식별하고 각 개인을 구별하는데 사용
+   #### 1. 객체 탐지 및 추적
+    - YOLO와 같은 실시간 객체 탐지 시스템을 사용해 매장 내 사람들을 탐지하고 추적
+    - 사람의 움직임을 식별하고 각 개인을 구별하는데 사용
+  
+   #### 2. 행동 인식
+    - Openpose 나 MediaPipe와 같은 키 포인트 추정 알고리즘을 사용해 사람의 자세나 움직임을 분석
+        - OpenPose : CNN을 사용한 2D포즈 추정 알고리즘
+        - PopseNet : 웹 브라우저에서 실행 가능한 TensorFlow.js 모델
+        - AlphaPose : OpenPose와 비슷하지만 더 높은 정확도와 속도를 제공, 다중 사람 포즈 추정에 효과적
+        - DeepCut and DeeperCut : CNN 사용 여러 사람의 포즈를 동시에 추정하는데 효과적
+        - HRNet : 고해상도의 키포인트 추정, 신체의 세부적인 움직임까지 포착할 수 있는 높은 정확도
+    - 특정 행동 패턴 식별 ex) 물건을 집거나, 무언가를 숨기는 동작
+  
+   #### 3. 이상 탐지
+    - 정상적인 행동 패턴과 이상 행동 패턴을 구별
+    - ex) 특정 시간 동안 같은 위치에 머무는 것, 불규칙한 움직임 패턴, 비정상적인 속도의 움직임
+  
+  #### 4. 실시간 분석 및 알람 시스템
+  
+    - 이상 행동이 감지되면 관리자에게 알림
 
- #### 2. 행동 인식
-  - Openpose 나 MediaPipe와 같은 키 포인트 추정 알고리즘을 사용해 사람의 자세나 움직임을 분석
-      - OpenPose : CNN을 사용한 2D포즈 추정 알고리즘
-      - PopseNet : 웹 브라우저에서 실행 가능한 TensorFlow.js 모델
-      - AlphaPose : OpenPose와 비슷하지만 더 높은 정확도와 속도를 제공, 다중 사람 포즈 추정에 효과적
-      - DeepCut and DeeperCut : CNN 사용 여러 사람의 포즈를 동시에 추정하는데 효과적
-      - HRNet : 고해상도의 키포인트 추정, 신체의 세부적인 움직임까지 포착할 수 있는 높은 정확도
-  - 특정 행동 패턴 식별 ex) 물건을 집거나, 무언가를 숨기는 동작
-
- #### 3. 이상 탐지
-  - 정상적인 행동 패턴과 이상 행동 패턴을 구별
-  - ex) 특정 시간 동안 같은 위치에 머무는 것, 불규칙한 움직임 패턴, 비정상적인 속도의 움직임
-
-#### 4. 실시간 분석 및 알람 시스템
-
-- 이상 행동이 감지되면 관리자에게 알림
-
-### 기술 스택
-![image](https://github.com/yknlwca/SeSac_Fianl_Prj/assets/145303968/0cd5184d-73dc-4b1b-8adb-c5792c7eabc7)
+## :heavy_check_mark: 기술 스택
+-   ![image](https://github.com/yknlwca/SeSac_Fianl_Prj/assets/145303968/0cd5184d-73dc-4b1b-8adb-c5792c7eabc7)
 
 - YOLO : Object Detection, KeyPoint
 - MediaPipe : KeyPoint 3D

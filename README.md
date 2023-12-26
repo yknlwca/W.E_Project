@@ -33,6 +33,11 @@
   
     - 이상 행동이 감지되면 관리자에게 알림
 
+
+  #### 고려사항
+    - 프라이버시 보호 : CCTV 기반 시스템은 프라이버시 침해 위험이 있으므로, 법률과 규정을 준수
+    - 데이터 처리 : 고성능 컴퓨터 필요
+    - 정확도 및 신뢰성 : 잘못된 알림을 최소화하는게 관건일 듯
 ## :heavy_check_mark: 기술 스택
 -   ![image](https://github.com/yknlwca/SeSac_Fianl_Prj/assets/145303968/0cd5184d-73dc-4b1b-8adb-c5792c7eabc7)
 

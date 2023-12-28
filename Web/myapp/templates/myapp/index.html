@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Django App</title>
+    <title>CCTV Checker</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -59,17 +59,35 @@
             color: #ffffff;
             font-weight: bold;
         }
+        .upload-btn {
+        display: block;
+        width: 200px;
+        padding: 10px;
+        margin: 20px auto;
+        background-color: #50b3a2;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .upload-btn:hover {
+        background-color: #e8491d;
+    }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div id="branding">
-                <h1><span class="highlight">My</span> Django App</h1>
+                <h1><span class="highlight">이상 행동 탐지</span> CCTV App</h1>
             </div>
             <nav>
                 <ul>
-                    <li class="current"><a href="/">Home</a></li>
+                    <li class="current"><a href="{% url 'home' %}" style = 'color:white'>Home</a></li>
+                    <li></li>
                     <!-- 추가 링크가 필요하다면 여기에 추가 -->
                 </ul>
             </nav>
@@ -77,9 +95,9 @@
     </header>
 
     <div class="container">
-        <h1>Welcome to My Django App</h1>
-        <p>This is a simple Django web application.</p>
-        <!-- 추가적인 웹사이트 내용 -->
+        <h1></h1>
+        <p></p>
     </div>
+    <a href="{% url 'upload_video' %}" class="upload-btn">Upload Video</a>
 </body>
 </html>

@@ -10,3 +10,4 @@ class Video(models.Model):
     video_file = models.FileField(upload_to='videos/')
     processed_video_file = models.FileField(upload_to='processed_videos/', blank=True, null=True)
     alarm_time = models.DateTimeField(blank=True, null=True)
+    processed = models.BooleanField(default=False)

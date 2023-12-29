@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Analysis Results</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .container {
+      padding-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Analysis Results</h2>
+    <!-- 결과를 여기에 표시합니다. 예를 들면: -->
+    <div class="alert alert-info" role="alert">
+      The analysis is complete. Please see the results below.
+    </div>
+    <!-- 결과 영상을 표시하려면 다음과 같은 HTML 비디오 태그를 사용할 수 있습니다. -->
+    <video width="640" height="480" controls>
+      <source src="{{ video.video_file.url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

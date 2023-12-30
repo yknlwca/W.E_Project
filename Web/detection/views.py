@@ -16,13 +16,13 @@ def upload_video(request):
             return redirect('view_results', video_id=form.instance.id)
     else:
         form = VideoForm()
-    return render(request, 'upload_video.html', {'form': form})
+    return render(request, 'detection/upload_video.html', {'form': form})
 
 # 비디오 분석 결과를 보여주는 뷰
 def view_results(request, video_id):
     video = Video.objects.get(id=video_id)
     process_video(video.video_file.path)  # 비디오 분석을 위해 process_video 함수 호출
-    return render(request, 'view_results.html', {'video': video})
+    return render(request, 'detection/view_results.html', {'video': video})
 
 # 홈 페이지를 보여주는 뷰
 def home(request):

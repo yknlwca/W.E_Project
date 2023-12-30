@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCTV 이상 행동 감지 시스템</title>
+    <title>영상 업로드</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
-    <div class="container text-center mt-5">
+    <div class="container mt-5">
         <div class="card">
             <div class="card-body">
-                <h1 class="page-title">CCTV 이상 행동 감지 시스템</h1>
-                <p class="lead mt-4">CCTV 영상을 분석하여 이상 행동을 탐지합니다.</p>
-                <a href="{% url 'upload' %}" class="btn btn-custom btn-lg mt-3">영상 업로드하기</a>
+        <h2 class="text-center">영상 업로드</h2>
+        <form method="post" enctype="multipart/form-data" class="mt-4">
+            {% csrf_token %}
+            {{ form.as_p }} <!-- 폼 필드를 여기에 렌더링 -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-success">업로드 및 분석 시작</button>
+            </div>
+        </form>
             </div>
         </div>
     </div>

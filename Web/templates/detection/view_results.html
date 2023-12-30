@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCTV 이상 행동 감지 시스템</title>
+    <title>분석 결과</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
-    <div class="container text-center mt-5">
+    <div class="container mt-5">
         <div class="card">
             <div class="card-body">
-                <h1 class="page-title">CCTV 이상 행동 감지 시스템</h1>
-                <p class="lead mt-4">CCTV 영상을 분석하여 이상 행동을 탐지합니다.</p>
-                <a href="{% url 'upload' %}" class="btn btn-custom btn-lg mt-3">영상 업로드하기</a>
+        <h2 class="text-center">분석 결과</h2>
+        <div class="mt-4">
+            <p>분석이 완료되었습니다. 아래에서 결과를 확인하세요.</p>
+            <!-- 결과 비디오 -->
+            <video src="{{ video_url }}" controls></video> <!-- 비디오 URL을 템플릿 변수로 사용 -->
+        </div>
             </div>
         </div>
     </div>

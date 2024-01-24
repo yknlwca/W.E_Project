@@ -18,7 +18,6 @@
 -    ![image](https://github.com/yknlwca/SeSac_Fianl_Prj/assets/145303968/afa2d4b8-4389-4cde-bc9d-995a4f33d2a0)
 
    #### 1. 객체 탐지 및 추적
-    ![image](https://github.com/yknlwca/SeSac_Fianl_Prj/assets/145303968/fe4eec4e-c220-4305-a761-dd756841fe15)
 
    
    #### 2. 행동 인식
@@ -38,6 +37,8 @@
   
     - 이상 행동이 감지되면 관리자에게 알림
 
+# 모델 구축 및 적용
+![image](https://github.com/yknlwca/SeSac_Fianl_Prj/assets/145303968/648372c5-a6ad-4f24-a96f-a62ddf216f48)
 
   #### 고려사항
     - 프라이버시 보호 : CCTV 기반 시스템은 프라이버시 침해 위험이 있으므로, 법률과 규정을 준수

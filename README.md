@@ -13,7 +13,6 @@
 
 ## :calendar: 일정 및 계획
   - 2023.12.12~2024.01.09
-   ![image](https://github.com/yknlwca/SeSac_Fianl_Prj/assets/145303968/123e2336-8724-4ab3-b901-e22ed8c0ec6d)
 ## :pencil: 순서
 -    ![image](https://github.com/yknlwca/SeSac_Fianl_Prj/assets/145303968/afa2d4b8-4389-4cde-bc9d-995a4f33d2a0)
 

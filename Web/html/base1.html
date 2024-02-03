@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap Bundle JS CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+<!-- 구글 아이콘 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% load bootstrap4 %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'next_page.css' %}">
+{#    <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">#}
+    {% bootstrap_css %}
+    <title>{% block title %}My Django Page{% endblock %}</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="title">
+             <a class="nav-link" href="{% url 'index1' %}">W.E</a>
+        </div>
+    </nav>
+    <div class="container">
+    <div class="upload-box">
+        {% block content %}{% endblock %}
+    </div>
+    </div>
+    {% bootstrap_javascript %}
+   <div class="about">
+        <span>&copy; 2024 W.E Technology</span>
+    </div>
+</body>
+</html>

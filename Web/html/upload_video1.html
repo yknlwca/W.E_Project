@@ -1,0 +1,40 @@
+<!-- myapp/templates/myapp/upload_video.html -->
+<!-- HTML 템플릿 예시 -->
+{% extends 'base1.html' %}
+
+{% block title %}Upload Video - {% endblock %}
+
+{% block content %}
+    <div class="upload-container">
+        <h1>Upload Video</h1>
+        <p class="sub-title">CLICK ON THE BUTTON AND CHOOSE VIDEO</p>
+        <span class="material-icons">file_upload</span>
+        <div class="submit-container">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-container">
+                    <input id="file-upload" type="file" name="video" accept="video/*" required style="display:none">
+                    <label for="file-upload" class="choose-file-btn">Upload Video</label>
+                    <span id="file-name" class="file-name"></span>
+                </div>
+                <button type="submit" id="submit" class="submit-btn">Start Analyzing Data</button>
+            </form>
+        </div>
+    </div>
+ 
+
+    <script>
+        document.getElementById('file-upload').addEventListener('change', function() {
+        let fileName = this.files[0].name;
+        document.getElementById('file-name').textContent = fileName;
+
+        let submitButton = document.getElementById('submit');
+        if (fileName) {
+            submitButton.classList.add('active');
+        }else {
+            submitButton.classList.remove('active');}
+        });
+    </script>
+
+
+{% endblock %}

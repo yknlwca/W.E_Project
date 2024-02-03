@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+
+    <!-- 구글 아이콘 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'news.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="title">
+             <a class="nav-link" href="{% url 'index1' %}">W.E</a>
+        </div>
+    </nav>
+    <div class="news-container">
+
+        <div class="news1">
+            <p class="title">“수리비가 더 커”…</br> 키오스크 현금털이범에</br> 무인점포 영업중단 ‘이중고’</p>
+            <a href="https://v.daum.net/v/20230817190203140">
+                <img src="{% static 'news1.jpeg' %}" alt="Your Image">
+            </a>
+        </div>
+        <span class="line1"></span>
+
+        <div class="news2">
+            <p class="title">혁신인가, 한계인가…무인매장의 딜레마</p>
+            <a href="https://magazine.hankyung.com/money/article/202305308275c">
+                <img src="{% static 'news2.jpg' %}" alt="Your Image">
+            </a>
+        </div>
+        <span class="line2"></span>
+
+        <div class="news3">
+            <p class="title">학교 앞 파고드는 무인점포,</br> ‘고사리손’ 향한 보이지 않는 유혹</p>
+            <a href="https://m.khan.co.kr/national/national-general/article/202306260830011#c2b">
+                <img src="{% static 'news3.webp' %}" alt="Your Image">
+            </a>
+        </div>
+        <span class="line4"></span>
+
+        <div class="news4">
+            <p class="title">무인점포 절도 71% 급증… </br> 경찰, 범인 10명중 3명꼴 놓쳐</p>
+            <a href="https://www.asiae.co.kr/article/2023071815305571978">
+                <img src="{% static 'news4.jpeg' %}" alt="Your Image">
+            </a>
+        </div>
+        <span class="line3"></span>
+        
+        <img src="{% static 'crime_st.webp' %}" alt="Your Image" class="main-bg">
+    </div>
+ <div class="about">
+        <span>&copy; 2024 W.E Technology</span>
+    </div>
+</body>
+</html>

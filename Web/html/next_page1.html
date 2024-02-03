@@ -1,0 +1,49 @@
+
+{% extends 'base1.html' %}
+
+
+{% block title %}Next Page - {% endblock %}
+
+{% block content %}
+    <div class="we-detect-container">
+        <div class="title-container">
+            <span class="material-icons">warning</span>
+            <h1>W.E Detect!</h1>
+{#            <span class="material-icons">warning</span>#}
+        </div>
+
+
+        <video width="640" height="380" controls>
+            <source src="{{ original_video_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- 모달 창 트리거 버튼 -->
+        <button type="button" class="btn-analyse" data-toggle="modal" data-target="#processedVideoModal" >
+            Analyse
+        </button>
+    </div>
+
+
+    <!-- 모달 창 -->
+    <div class="modal fade" id="processedVideoModal" tabindex="-1" role="dialog"
+         aria-labelledby="processedVideoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="processedVideoModalLabel">Analyse Video</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <video width="640" height="380" controls >
+                        <source src="{{ processed_video_url }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
